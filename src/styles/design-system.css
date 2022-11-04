@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap');
+
+
+:root{
+    --h1:40px;
+    --h2:32px;
+    --h3:28px;
+    --h4:24px;
+    --h5:20px;
+    --h6:16px;
+
+
+    --sub:20px;
+     
+    --label:16px;
+    --ls:5px;
+    --body:14px;
+
+   
+    --font-1:'Montserrat';
+    --font-2:'work sans',sans-serif;
+    
+    --color-dark-100:#212529;
+    --color-dark-75:rgba(33,37,41,0.75);
+    --color-dark-50:rgba(33,37,41,0.50);
+    --color-dark-25:rgba(33,37,41,0.25);
+
+
+
+
+    --color-white-100:rgba(255,255,255,1);
+    --color-white-75:rgba(255,255,255,0.75);
+    --color-white-50:rgba(255,255,255,0.50);
+    --color-white-25:rgba(255,255,255,0.25);
+
+
+    --color-green-100:rgba(116,198,157,1);
+    --color-green-75:rgba(116,198,157,0.75);
+    --color-green-50:rgba(116,198,157,0.50);
+    --color-green-25:rgba(116,198,157,0.50);
+
+
+   
+
+    --shadow-1:3px 4px 12px 1px rgba(0,0,0,0.25);
+
+}
+
+
+
+/**
+removing default style 0f browser
+**/
+
+*{  
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/**
+style rules for  common button
+**/
+
+
+
+.white-btn,
+.dark-btn{
+    color: var(--color-dark-100);
+    background-color: var(--color-white-100);
+    cursor: pointer;
+    font-size: var(--h5);
+    font-family: var(--font-2);
+    border-radius: 8px;
+    padding: 10px 40px;
+    border: none;
+   
+}
+.dark-btn{
+    color: var(--color-white-100);
+    background-color: var(--color-dark-100);
+ }
+
+ .white-btn:hover,
+.dark-btn:hover{
+    background-image: linear-gradient(80deg,blue,rgb(218, 50, 230),red);
+}
+ 
+
+
+ 
+
+
+/**
+style rules for  text 
+**/
+
+
+.text-dark{
+    color: var(--color-dark-100);
+}
+.text-white{
+color: var(--color-white-100);
+}
+.text-green{
+    
+    background: -webkit-linear-gradient(13deg,  red, pink, blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.label{
+font-family: var(--font-2);
+letter-spacing: var(--ls);
+font-size: var(--label);
+text-transform:uppercase;
+font-weight: 700;
+
+}
+
+
+
+
+/**
+hero section 
+**/
+
+.hero
+{
+background-image: linear-gradient(125deg,blue,rgb(168, 102, 102),pink);
+}
+/**
+style system for navbar
+**/
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+ 
+}
+
+
+.navbar--logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.navbar--logo--text{
+    
+    font-family: var(--font-2);
+    font-size: var(--h2);
+    font-weight: 500;
+    color: var(--color-white-100);
+
+}
+.navbar--menu{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: var(--font-2);
+    font-size: var(--h5);
+}
+.navbar--logo--text:hover{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.navbar--logo--text:hover{
+    font-weight: 500;
+  
+    text-shadow: 
+    1px 1px 20px rgb(157, 39, 15),
+    1px 1px 40px rgb(228, 47, 27),
+    1px 1px 80px rgb(196, 22, 22),
+    1px 1px 120px rgb(179, 56, 15);
+}
+[class^="navbar--menu--"]:hover
+{
+ color: rgb(69, 7, 7);
+}
+[class^="navbar--menu--"]
+{
+ transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+    
+
+
+[ class ^="navbar--menu--"]
+{
+    color: var(--color-white-100);
+    text-decoration: none;
+}
+
+
+
+
+/** 
+style rules for common classes
+**/
+
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.common--title{
+    text-transform: capitalize;
+    font-size: var(--h1);
+    font-weight: bold;
+    font-family:var(--font-1);
+    
+}
+.responsive--img{
+    max-width: 100%;
+    height: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 40px 0;
+    align-items: center;
+}
+
+.navbar--menu--icon i{
+    font-size: var(--h2);
+    color: var(--color-white-100);
+    cursor: pointer;
+
+}
+.navbar--menu--icon{
+    display: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+   
+}
+
+/**
+footer designing
+**/
+.footerwrapper
+{
+    
+    background-image: linear-gradient(125deg,blue,rgb(168, 102, 102),pink);
+   
+}
+.footerlinks
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footerlinks--social{
+    display: flex;
+    gap: 20px;
+}
+.footerlinks--copyrights{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+
+/**
+
+media query
+**/
+
+@media (max-width:1200px)
+{
+    .container{
+        max-width: 970px;
+        margin: auto;
+    }
+    .navbar--menu--icon{
+        display: none;
+    }
+}
+@media (max-width:1024px)
+{
+    .container{
+        max-width: 740px;
+        margin: auto;
+    }
+    .navbar--menu--icon{
+        display: none;
+    }
+    .common--title{
+        font-size: var(--h4);
+    }
+   
+}
+@media (max-width:768px)
+{
+
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .container{
+        max-width: 500px;
+        margin: auto;
+    }
+    .navbar--menu{
+        z-index: 1;
+        
+        position: absolute;
+        top: 10vh;
+        left: 0%;
+        background-color: var(--color-green-100);
+        background-image: linear-gradient(125deg,blue,rgb(168, 102, 102),pink);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+    .navbar--menu--icon{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
+    .hidden{
+        z-index: -20;
+        opacity: 0;
+    }
+    .footerlinks{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media (max-width:568px)
+{
+    
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+   
+    .navbar--menu--icon{
+        display: block;
+    }
+   
+}
+

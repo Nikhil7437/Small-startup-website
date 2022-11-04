@@ -1,0 +1,54 @@
+body{
+    min-height: 100vh;
+    display: grid;
+}
+/* new */
+
+.navbar--logo--img
+{
+    width: 50px;
+}
+.hero{
+    align-self: start;
+}
+.footerwrapper{
+    align-self: end;
+}
+.sectiontwo{
+    gap: 20px;
+}
+.text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-family: var(--font-2);
+   
+    font-size: 800;
+}
+input,textarea
+{
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 2px solid black;
+    border-radius: 3px;
+    
+}
+
+@media (max-width:768px)
+{
+    .sectiontwo--right
+    {
+        order: 0;
+    }
+    .sectiontwo--left
+    {
+        order: 1;
+    }
+}
+

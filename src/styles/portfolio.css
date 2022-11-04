@@ -1,0 +1,36 @@
+.sectionone--content--text
+{
+    font-size: var(--sub);
+    font-family: var(--font-2);
+    opacity: 0.8;
+    margin: 30px 0px;
+}
+.sectionone--portfolio--img{
+    max-width: 200px;
+}
+
+.sectionone--portfolio--about h1{
+    font-size: var(--h1) ;
+    padding: 20px 20px;
+}
+.sectionone--btn{
+   margin: 30px 0 ;
+    justify-self: center;
+}
+
+
+.navbar--logo--img
+{
+    width: 50px;
+}
+.sectionone--img img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.sectionone--img img
+{
+    box-shadow: 10px 5px 20px rgb(21, 20, 21);
+}
+.sectionone--img img:hover
+{
+    box-shadow: 1px 5px 20px rgb(8, 61, 221);
+}
