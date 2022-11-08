@@ -1,7 +1,7 @@
 
 # Small startup website
  
-For the creation of this website i used  html and css . And it's completely responsive as for devloping hte greate user experience
+During the creation of this website i used  html and css and it's completely responsive as for developing the grate user experience
  
 
 
